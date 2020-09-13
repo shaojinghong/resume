@@ -160,7 +160,7 @@
                 </h3>
                 <a
                   class="item-time"
-                  href="https://www.qingcloud.com/products/express/"
+                  href=""
                   >2020.01-至今</a
                 >
               </header>
@@ -182,12 +182,14 @@
                       8. 利用Sentry搭建线上监控系统，将报错与代码release、commit相关联，自动提issue；平均每周发现解决5个线上bug；<br>
                       9. 利用git ci-cd进行测试、编译打包、镜像构建、部署k8s等pipe-line控制，与后端运维团队共同探索devops的实践；<br>
 
-                      技术栈：TS、React Hooks、Unstated、Immer
                     </ul>
                   </li>
                   <li>
-                    项目难点：1、第一次在如此大项目全面使用TS和hooks，极具挑战性；2、将组件间业务流程抽象出可复用hooks；3、多模块大文件上传封装实现断点续传；4、资源任务状态与进度实时同步
+                    技术栈：TypeScript + React Hooks + Unstated + Immer + devops
                   </li>
+                  <!-- <li>
+                    项目难点：1、第一次在如此大项目全面使用TypeScript和hooks，极具挑战性；2、将组件间业务流程抽象出可复用hooks；3、多模块大文件上传封装实现断点续传；4、资源任务状态与进度实时同步
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -207,13 +209,18 @@
                     提供管理员界面和端用户的自服务界面，提供业务管理人员对计算节点、物理设备、网络设备等资源的统一可视化的监管。
                   </li>
                   <li>
-                    1. 项目搭建：自己搭建webpack脚手架，实现模块热替换、路由懒加载、代码分割、代码构建提速、利用wepack-node-server实现跨域转发功能；<br>
-                    2. Node server搭建：实现路由、日志收集、安全防护、身份校验、跨域请求转发等中间件，编写缓存策略优化客户端性能；<br>
-                    3. 项目部署：编写shell脚本进行代码更新，利用PM2进行进程守护、利用PKG进行项目的跨平台的安装；<br>
-                    4. 代码规范继承并修改airbnb规范，利用eslint、stylelint、husky、pre-commit等严格控制代码质量；<br>
-                    5. 前端多级路由设计、实现多标签页共存、全局store设计、对伸缩自如的Grid Table等公共组件进行拆分提取；<br>
-                    6. 利用继承快速生成页面，利用组合灵活构建Toobar，利用高阶组件和反向继承減少冗余代码；<br>
-                    7. 遵循Mobx中尽量使用小组件和尽量晚的使用间接引用值的原则減少不必要的渲染，优化性能；<br>
+                    个人职责：
+                    <ul>
+                      1. 项目搭建：自己搭建 webpack 脚手架，实现模块热替换、路由懒加载、代码分割、代码构建提速、利用 wepack-node-server 实现跨域转发功能；<br>
+                      2. Node server搭建：实现路由、日志收集、安全防护、身份校验、跨域请求转发等中间件，编写缓存策略优化客户端性能；<br>
+                      3. 项目部署：编写 shell 脚本进行代码更新，利用PM2进行进程守护、利用 PKG 进行项目的跨平台的安装；<br>
+                      4. 代码规范继承并修改 airbnb 规范，利用 eslint、stylelint、husky、pre-commit 等严格控制代码质量；<br>
+                      5. 前端多级路由设计、实现多标签页共存、全局 store 设计、对伸缩自如的 Grid Table 等公共组件进行拆分提取；<br>
+                      6. 利用继承快速生成页面，利用组合灵活构建 Toobar，利用高阶组件和反向继承減少冗余代码；<br>
+                      7. 遵循 Mobx 中尽量使用小组件和尽量晚的使用间接引用值的原则減少不必要的渲染，优化性能；<br>
+
+                      技术栈：Node + Webpack + React + Mobx
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -228,21 +235,27 @@
               <div class="item-bd">
                 <ul>
                   <li>
-                    项目概述：基于 React 开发的一套 UI
-                    组件库工具，风格统一、设计灵活、组件间自由组合，主题和语言可定制等特点，组件数量
-                    45+
+                    项目概述：KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，
+                    提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。
+                    KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。
                   </li>
                   <li>
-                    个人职责：在开发单一组件的过程中涉及到了开发组件库的全部流程，包括组件
-                    API 设计、开发、Code
-                    review、到单元测试、发布，使用过程中组件的修复、优化与更新
+                    个人职责：
+                    <ul>
+                      1. 开发基于 Jenkins 的可视化 CI / CD 流水线编辑； <br>
+                      2. 对底层 k8s 中的多种类型的资源提供可视化的展示与监控数据，以向导式 UI 实现工作负载管理、镜像管理、服务与应用路由管理 (服务发现)，
+                      支持数万规模的容器资源调度，保证业务在高峰并发情况下的高可用性；<br>
+                      3. 日志查询与收集，支持多维度（项目/工作负载/容器组/容器以及关键字）的模糊搜索，不同维度展示不同布局效果；
+                      4. 多租户告警系统：提供容器组、CPU、内存、磁盘、网络等多个监控告警指标，
+                      可自定义某监控指标的检测周期长度、持续周期次数、告警等级等；
+                    </ul>
                   </li>
                   <li>
-                    项目难点：1、组件设计对粒度的把握；2、组件 API
-                    设计对可拓展性考量；3、组件设计的通用性考量；4、组件兼容性与显示效果的取舍；5、组件设计对运行性能的考量；6、组件库对可维护性的考量
+                    技术栈：Node + Webpack + React + Mobx
                   </li>
                   <li>
-                    工作成果：组件库为青云产品生态而生，解决了因前端技术栈杂乱导致的产品视觉、布局不统一，操作不规范，业务迭代慢等问题，极大的提高了青云产品质量和开发效率
+                    项目难点：难点并不是前端技术、而是需要对云原生、devops、k8s 架构等业务有深刻理解，
+                    根据不同的业务特点与产品、设计讨论可用性的交互方式，让 devops 变得真正高效易用、让 k8s 管理变得简单；
                   </li>
                 </ul>
               </div>
@@ -254,7 +267,7 @@
         <section class="skill">
           <header class="section-hd">
             <span class="section-title-l"></span>
-            <h2 class="section-title">专业技能</h2>
+            <h2 class="section-title">专业技能/擅长</h2>
             <span class="section-title-r"></span>
           </header>
           <div class="section-bd">
@@ -263,35 +276,15 @@
               <div class="item-bd">
                 <ul class="section-content">
                   <li>
-                    掌握 CSS、HTML、常用布局，能写出富有 Web
-                    语义化的网页结构
+                    算法与数据结构基础扎实；熟悉 TCP、Socket、HTTP 等网络协议；
                   </li>
                   <li>
-                    掌握 JS、ES6+、JS 运行机制且拥有较好的面向对象编程思想
+                    精通 JS/Node.js，熟练掌握 Express/Koa/React 等框架</li>
+                  <li>
+                    具有基于 TypeScript、React Hooks 等主流技术的大型项目经验；深刻理解不同状态管理方案的特点；
                   </li>
                   <li>
-                    熟练使用 React + React-Hooks + Mobx + React-Router
-                    生态开发，了解 Vue 框架
-                  </li>
-                  <li>
-                    掌握 NodeJS，熟练使用 Express、Koa 框架，利用 NodeJS
-                    开发常用工具包和搭建项目中间层
-                  </li>
-                  <li>
-                    熟悉前端工程化、模块化思想，掌握 Webpack + Babel 构建项目
-                  </li>
-                  <li>
-                    熟悉 HTTP 协议、常见状态码、浏览器缓存机制和浏览器渲染机制
-                  </li>
-                  <li>
-                    掌握基于浏览器渲染机制对网页从网络、编码、静态资源、交付、构建再到视觉上针对性优化
-                  </li>
-                  <li>
-                    熟练掌握 Git 进行线上线下的项目工作流和版本管理
-                  </li>
-                  <li>熟悉常用的 Linux 命令，熟悉基础的 DevOps 流程</li>
-                  <li>
-                    掌握开源项目开发流程，拥抱开源，热爱分享，乐于尝试新技术
+                    熟练掌握 docker，熟悉 k8s 架构、对云原生、devops 有了解，并有浓厚兴趣；
                   </li>
                 </ul>
               </div>
