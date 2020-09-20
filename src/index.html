@@ -25,8 +25,8 @@
         </section>
         <section class="info">
           <ul>
-            <li>男 ｜ 25 岁 | 3年经验</li>
-            <li>期望薪资 25k - 30k</li>
+            <li>男 ｜ 25 岁</li>
+            <li>两年半年经验</li>
             <li>西安工业大学 2014 ~ 2018 （本科）</li>
           </ul>
         </section>
@@ -84,26 +84,29 @@
                 </p>
                 <ul class="section-content">
                   <li>
-                    协调团队配合，包括业务、设计、前端交互，确立开发方案
+                    核心业务开发、二次封装基础组件、封装各类工具方法和 hooks，支撑业务快速迭代；
                   </li>
                   <li>
-                    团队基础技术选型、脚手架搭建、中间层搭建、构建流程、新技术探索实践
+                    规划版本控制、优化 git ci-cd 流程、添加 E2E 测试、搭建 sentry 性能监控系统；
+                  </li>
+                  <li>
+                    编写各类脚本工具提高开发效率；编写 Babel、eslint 插件规范代码格式；
                   </li>
                 </ul>
               </div>
               <div class="item-bd">
                 <p class="item-des">
-                  奇舞团内技术分享（3次)：
+                  技术分享（3次)：
                 </p>
                 <ul class="section-content">
                   <li>
-                    自动化E2E测试工具Cypress实践
+                    自动化 E2E 测试实践；
                   </li>
                   <li>
-                    前端错误监控原理与实践
+                    前端错误监控原理与实践；
                   </li>
                   <li>
-                    函数式编程历史与实践
+                    前端需要了解的云计算、云原生知识；
                   </li>
                 </ul>
               </div>
@@ -133,10 +136,10 @@
                     1. 参与青云公有云控制台研发
                   </li>
                   <li>
-                    2. 私有云统一运维平台核心开发者，为私有云用户提供对IaaS、PaaS资源的统一管理、分发与可视化监控。
+                    2. 私有云统一运维平台核心开发者，为私有云用户提供对 IaaS、PaaS 资源的统一管理、分发与可视化监控。
                   </li>
                   <li>
-                    3. 容器云 KubeSphere 核心开发者， 以Kubernetes为内核的云原生分布式操作系统，使第三方应用与云原生生态组件进行即插即用的集成，不仅囊括集群资源的管理, 还集成日志/监控/预警和持续交付能力。
+                    3. 容器云 KubeSphere 核心开发者， 以 k8s 为内核的云原生分布式操作系统，使第三方应用与云原生生态组件进行即插即用的集成，不仅囊括集群资源的管理, 还集成日志/监控/预警和持续交付能力。
                   </li>
                 </ul>
               </div>
@@ -156,7 +159,7 @@
             <div class="item">
               <header class="item-hd">
                 <h3 class="item-name">
-                  360私有云控制台 - 核心开发者
+                  360 私有云控制台 - 核心开发者
                 </h3>
                 <a
                   class="item-time"
@@ -167,25 +170,25 @@
               <div class="item-bd">
                 <ul>
                   <li>
-                    项目概述：一个庞大的云计算系统，为用户提供对计算、网络与 CDN、SD-WAN、存储、安全等云计 算资源的创建、部署、监控、迁移、备份的功能，并提供计费、合约、工单等功能
+                    项目概述：一个庞大的云计算系统，为用户提供对计算、网络与 CDN、对象存储、安全等云计算资源的创建、部署、监控、迁移、备份的功能，并提供计费、合约、工单等功能。
                   </li>
                   <li>
                     个人职责：
                     <ul>
                       1. 支持基础业务模块：计算、镜像、网络、数据库、操作审计、监控、任务管理等；<br>
-                      2. 从业务实际流程中沉淀一系列hooks去维护组件间流程关系，如 useModal、useStepsForm、useFormTable 等；<br>
+                      2. 从业务实际流程中沉淀一系列 hooks 去维护组件间流程关系，如 useModal、useStepsForm、useFormTable 等；<br>
                       3. 利用 HOC 组件赋予所有页面组件切换可用区、切换组织项目、语言的能力；<br>
-                      4. 负责所有产品的计费功能，封装计费组件及配套 hooks，无感知嵌入已有业务逻辑中，实现产品规格、价格和组件间的响应式数据交互；<br>
+                      4. 负责所有产品计费，封装计费组件及配套 hooks，无感知地嵌入已有业务逻辑中，实现产品规格、价格和组件间的响应式数据交互；<br>
                       5. 利用 Socket.IO 和 Mitt 封装 WebSocket 服务，提供全局消息实时推送，对全平台事件或请求调度资源进行实时反馈和进度显示；<br>
-                      6. 规范方面：利用 ESlint、stylelint、Prettier、Husky、pre-commit等工具严格控制代码规范和质量；利用Commitizen和conventional-changelog规范commit、自动生成changelog。<br>
-                      7. 编写babel插件，修改静态代码片段，通过改变引入的组件路径的方式，将第三方组件替换为本地定制组件；并沉淀出babel插件包，用于替换除node_modules外的任意静态代码片段；<br>
-                      8. 利用Sentry搭建线上监控系统，将报错与代码release、commit相关联，自动提issue；平均每周发现解决5个线上bug；<br>
-                      9. 利用git ci-cd进行测试、编译打包、镜像构建、部署k8s等pipe-line控制，与后端运维团队共同探索devops的实践；<br>
-
+                      6. 规范方面：利用 ESlint、stylelint、Prettier、Husky、pre-commit 等工具严格控制代码规范和质量；利用 Commitizen 和 conventional-changelog 规范 commit、自动生成changelog。<br>
+                      7. 编写babel插件，修改静态代码片段，通过改变引入的组件路径的方式，将第三方组件替换为本地定制组件；并沉淀出babel插件包，用于替换除 node_modules 外的任意静态代码片段；<br>
+                      8. 利用 Sentry 搭建线上监控系统，将报错与代码 release、commit相关联，自动提 issue；平均每周发现解决5个线上 bug；<br>
+                      9. 调研多种自动化 E2E 测试方案、最后选择 cypress 做基础性测试，集成到 CI 流程中；<br>
+                      10. 利用 Git CI-CD 进行测试、编译打包、镜像构建、部署 k8s 等 pipe-line 控制，与后端运维团队共同探索 devops 的落地；<br>
                     </ul>
                   </li>
                   <li>
-                    技术栈：TypeScript + React Hooks + Unstated + Immer + devops
+                    技术栈：TypeScript + React Hooks + Styled-components + Unstated + Immer + Devops
                   </li>
                   <!-- <li>
                     项目难点：1、第一次在如此大项目全面使用TypeScript和hooks，极具挑战性；2、将组件间业务流程抽象出可复用hooks；3、多模块大文件上传封装实现断点续传；4、资源任务状态与进度实时同步
@@ -212,15 +215,18 @@
                     个人职责：
                     <ul>
                       1. 项目搭建：自己搭建 webpack 脚手架，实现模块热替换、路由懒加载、代码分割、代码构建提速、利用 wepack-node-server 实现跨域转发功能；<br>
-                      2. Node server搭建：实现路由、日志收集、安全防护、身份校验、跨域请求转发等中间件，编写缓存策略优化客户端性能；<br>
-                      3. 项目部署：编写 shell 脚本进行代码更新，利用PM2进行进程守护、利用 PKG 进行项目的跨平台的安装；<br>
+                      2. BFF 层搭建：实现路由、日志收集、安全防护、身份校验、跨域请求转发等中间件，编写缓存策略优化客户端性能；<br>
+                      3. 项目部署：编写 shell 脚本进行代码更新，利用 PM2 进行进程守护、利用 PKG 进行项目的跨平台的安装；<br>
                       4. 代码规范继承并修改 airbnb 规范，利用 eslint、stylelint、husky、pre-commit 等严格控制代码质量；<br>
                       5. 前端多级路由设计、实现多标签页共存、全局 store 设计、对伸缩自如的 Grid Table 等公共组件进行拆分提取；<br>
-                      6. 利用继承快速生成页面，利用组合灵活构建 Toobar，利用高阶组件和反向继承減少冗余代码；<br>
+                      6. 利用继承快速生成页面，利用组合灵活构建 Toolbar，利用高阶组件和反向继承減少冗余代码；<br>
                       7. 遵循 Mobx 中尽量使用小组件和尽量晚的使用间接引用值的原则減少不必要的渲染，优化性能；<br>
-
-                      技术栈：Node + Webpack + React + Mobx
                     </ul>
+                  </li>
+                  <li>技术栈：Node + Webpack + React + Mobx</li>
+                  <li>
+                    项目地址：
+                    <a href="https://www.qingcloud.com/">https://www.qingcloud.com/</a>
                   </li>
                 </ul>
               </div>
@@ -245,7 +251,7 @@
                       1. 开发基于 Jenkins 的可视化 CI / CD 流水线编辑； <br>
                       2. 对底层 k8s 中的多种类型的资源提供可视化的展示与监控数据，以向导式 UI 实现工作负载管理、镜像管理、服务与应用路由管理 (服务发现)，
                       支持数万规模的容器资源调度，保证业务在高峰并发情况下的高可用性；<br>
-                      3. 日志查询与收集，支持多维度（项目/工作负载/容器组/容器以及关键字）的模糊搜索，不同维度展示不同布局效果；
+                      3. 日志查询与收集，支持多维度（项目/工作负载/容器组/容器以及关键字）的模糊搜索，不同维度展示不同布局效果；<br>
                       4. 多租户告警系统：提供容器组、CPU、内存、磁盘、网络等多个监控告警指标，
                       可自定义某监控指标的检测周期长度、持续周期次数、告警等级等；
                     </ul>
@@ -256,6 +262,37 @@
                   <li>
                     项目难点：难点并不是前端技术、而是需要对云原生、devops、k8s 架构等业务有深刻理解，
                     根据不同的业务特点与产品、设计讨论可用性的交互方式，让 devops 变得真正高效易用、让 k8s 管理变得简单；
+                  </li>
+                  <li>
+                    项目地址：
+                    <a href="https://kubesphere.com.cn/en/">https://kubesphere.com.cn/en/</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--项目4: React 组件库 QUI -->
+            <div class="item">
+              <header class="item-hd">
+                <h3 class="item-name">React 组件库 QUI - 主要开发者</h3>
+                <a class="item-time">2018.03-2018.7</a>
+              </header>
+              <div class="item-bd">
+                <ul>
+                  <li>
+                    项目概述：基于 React 开发的一套 UI 组件库工具，服务于青云各产品线，提供统一的设计风格；
+                  </li>
+                  <li>
+                    个人职责：
+                    <ul>
+                      在开发单一组件的过程中涉及到开发组件库的全部流程，包括组件 API 设计、开发、Code review、到单元测试、发布，使用过程中组件的修复、优化与更新
+                    </ul>
+                  </li>
+                  <li>
+                    项目难点：1、组件设计对粒度的把握；2、组件 API 设计对可拓展性考量；3、组件设计的通用性考量；4、组件兼容性与显示效果的取舍；
+                  </li>
+                  <li>
+                    工作成果：组件库为青云产品生态而生，解决了因前端技术栈杂乱导致的产品视觉、布局不统一，操作不规范，业务迭代慢等问题，极大的提高了青云产品质量和开发效率
                   </li>
                 </ul>
               </div>
@@ -279,7 +316,7 @@
                     算法与数据结构基础扎实；熟悉 TCP、Socket、HTTP 等网络协议；
                   </li>
                   <li>
-                    精通 JS/Node.js，熟练掌握 Express/Koa/React 等框架</li>
+                    精通 JS/Node.js，熟练掌握 Express/Koa/React 等框架；</li>
                   <li>
                     具有基于 TypeScript、React Hooks 等主流技术的大型项目经验；深刻理解不同状态管理方案的特点；
                   </li>
